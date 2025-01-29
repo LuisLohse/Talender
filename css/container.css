@@ -1,0 +1,44 @@
+#main_container {
+  width: 100%;
+  height: calc(100% - 12rem);
+  position: relative;
+  overflow: hidden;
+
+  background-color: var(--white);
+}
+
+#main_container .main_sub {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  transition-duration: .8s;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  background-color: var(--white);
+}
+
+#main_container #main_1 {
+  transform: translateX(0%);
+
+  /* background-color: var(--red); */
+}
+
+#main_container #main_2 {
+  transform: translateX(100%);
+
+  /* background-color: var(--blue); */
+}
+
+#main_container #main_3 {
+  transform: translateX(200%);
+
+  /* background-color: var(--white); */
+}
+
+#main_container #main_4 {
+  transform: translateX(300%);
+  justify-content: center;
+  /* background-color: var(--black); */
+}

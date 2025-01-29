@@ -1,0 +1,149 @@
+.ueberschrift {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ueberschrift h1 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+
+#main_1_sub {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width:100%;
+  height:100%;
+}
+
+#main_1_sub #projekte_main_grid {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 55%;
+}
+
+#main_1_sub #projekte_main_grid .projektx {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-flow: row nowrap;
+  box-sizing: content-box;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+  transition-duration: .7s;
+}
+
+
+#main_1_sub [id*='projekt'] .logo_firm {
+  height: 100%;
+  width: 22%;
+  /* background-color: var(--blue); */
+  /* border-left: 6px solid var(--dark-black);
+  border-top: 3px solid var(--dark-black); */
+  /* border-right: 2px solid var(--dark-black); */
+  /* border-bottom: 3px solid var(--dark-black); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* #main_1_sub [id*='projekt']:first-of-type .logo_firm {
+  border-top: 6px solid var(--dark-black);
+  border-bottom: 6px solid var(--dark-black);
+} */
+
+
+/* #main_1_sub [id*='projekt']:last-of-type .logo_firm {
+  border-bottom: 6px solid var(--dark-black);
+}
+ */
+
+#main_1_sub [id*='projekt'] .black_buffer {
+  height: 100%;
+  width: 2px;
+  background-color: var(--dark-black);
+}
+
+
+#main_1_sub [id*='projekt'] .description_firm {
+  height: 100%;
+  width: 70%;
+  padding-left: 10px;
+  /* border-left: 2px solid var(--dark-black); */
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  position: relative;
+}
+
+
+/* #main_1_sub [id*='projekt']:first-of-type .description_firm {
+  border-top: 6px solid var(--light-black);
+  border-bottom: 6px solid var(--light-black);
+} */
+
+/* #main_1_sub [id*='projekt']:last-of-type .description_firm {
+  border-bottom: 6px solid var(--light-black);
+} */
+
+#main_1_sub [id*='projekt'] .description_firm .title {
+  height: 20%;
+}
+
+#main_1_sub [id*='projekt'] .description_firm .title h3 {
+  margin: 0;
+}
+
+#main_1_sub [id*='projekt'] .description_firm .innerText{
+  height: 70%;
+}
+
+#main_1_sub [id*='projekt'] img {
+  height: auto;
+  width: 100%;
+  max-width: 150px;
+}
+
+
+#main_1_sub .description_firm .projekt_fade_white {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(0,255,255,0) 0%, rgba(255, 255, 255,1) 80%);
+}
+
+#close_description{
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#close_description #extended_description {
+  width: 70vw;
+  background-color: var(--red);
+  cursor: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#close_description #extended_description #ex_desc_text{
+  color: var(--black);
+  padding: 5rem 2rem;
+  text-align: justify;
+  font-size: 1.5rem;
+}

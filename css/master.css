@@ -1,0 +1,16 @@
+:root {
+--pink: #FF99C8;
+--yellow: #FCF6BD;
+--green: #D0F4DE;
+--blue: #A9DEF9;
+--violet: #3D315B;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Der Talender</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/cal.css">
+    <link rel="stylesheet" href="./css/task_box.css">
+    <link rel="stylesheet" href="./css/task.css">
+    <link rel="stylesheet" href="./css/calenderTask.css?">
+    <link rel="stylesheet" href="./css/addTask.css">
+    <link rel="stylesheet" href="./css/checkmark.css">
+    <link rel="stylesheet" href="./css/control_panel.css">
+  </head>
+  <body>
+
+
+    <div id="main_container">
+
+      <div id="task_container">
+
+        <div id="task_head">
+
+          <span>To-Do:</span>
+
+          <div id="add_task_container">
+            <div id="add_task">
+              <div id="task_plus1"></div>
+              <div id="task_plus2"></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="task_adder_container">
+
+          <div id="task_adder_design">
+
+            <div class="task_title">
+              <input class="adder_input_title" type="text" placeholder="Ich muss...">
+            </div>
+
+            <div class="colorselector">
+              <div class="color_green"></div>
+              <div class="color_blue"></div>
+              <div class="color_yellow"></div>
+              <div class="color_pink"></div>
+            </div>
+            <div class="task_adder_add">
+              <div class="task_beam_plus1"></div>
+              <div class="task_beam_plus2"></div>
+            </div>
+
+          </div>
+
+        </div>
+        <div id="task_body">
+
+           <!-- <div class="task">
+            <div class="checkmark_container">
+              <div class="checkmark">
+                <div class="pos_check">
+                  <div class="check1"></div>
+                  <div class="check2"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="task_title">Flexbox einbauen</div>
+
+            <div class="colorselector">
+              <div class="color_green"></div>
+              <div class="color_blue"></div>
+              <div class="color_yellow"></div>
+              <div class="color_pink"></div>
+            </div>
+            <div class="task_close"><div class="task_beam"></div></div>
+          </div> -->
+
+
+      </div>
+      </div>
+
+      <div id="cal_container">
+
+        <div id="cal_head">
+          <span>Mein Tag</span>
+        </div>
+
+        <div id="cal_body">
+          <div id="calender">
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>00:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <!-- Maybe for deletion idk -->
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>00:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>01:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>01:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>02:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>02:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>03:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>03:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>04:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>04:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>05:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>05:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>06:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>06:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>07:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>07:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>08:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>08:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>09:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>09:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>10:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>10:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>11:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>11:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>12:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>12:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>13:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>13:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>14:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>14:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>15:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>15:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>16:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>16:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>17:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>17:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>18:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>18:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>19:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>19:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>20:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>20:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>21:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>21:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>22:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>22:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>23:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>23:30</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div class="cal_unit">
+              <div class="cal_time_container">
+                <span>24:00</span>
+              </div>
+              <div class="cal_unit_body"></div>
+            </div>
+
+            <div id="timeStamp_container">
+              <div id="timeStamp"></div>
+            </div>
+
+            <!-- === Test instance === -->
+            <!-- <div class="task_in_calender">
+              <div class="task_in_calender_top">
+                <span class="tic_title">[TEST INSTANCE]</span>
+                <div class="tic_close">
+                  <div class="tic_close_beam_1"></div>
+                  <div class="tic_close_beam_2"></div>
+                </div>
+
+                <div class="tic_check_contain">
+                  <div class="tic_check">
+                    <div class="tic_check_beam_1"></div>
+                    <div class="tic_check_beam_2"></div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="task_in_calender_bottom">
+                <div class="task_in_cal_arrow">
+                  <div class="tic_beam_1"></div>
+                  <div class="tic_beam_2"></div>
+                </div>
+              </div>
+
+            </div> -->
+
+
+          </div>
+        </div>
+      </div>
+
+      <div id="control_panel">
+        <div id="delete_button"></div>
+        <div id="delete_done_button"></div>
+      </div>
+
+
+    <span id="version">(V 0.2)</span>
+    <script src="./js/checkAndRegister.js?8==D" charset="utf-8"></script>
+    <script src="./js/animateGradient.js" charset="utf-8"></script>
+    <script src="./js/fetchFromDB.js" charset="utf-8"></script>
+    <script src="./js/uploadDataToDB.js" charset="utf-8"></script>
+    <script src="./js/task.js?" charset="utf-8"></script>
+    <script src="./js/initScroll.js" charset="utf-8"></script>
+    <script src="./js/timeStamp.js" charset="utf-8"></script>
+    <script src="./js/addTask.js" charset="utf-8"></script>
+    <script src="./js/control_panel.js" charset="utf-8"></script>
+  </body>
+</html>

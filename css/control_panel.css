@@ -1,0 +1,43 @@
+#control_panel {
+  display: flex;
+  position: fixed;
+  top: 1.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  flex-flow: row nowrap;
+}
+
+#delete_button {
+  height: 1.8rem;
+  width: 1.8rem;
+
+  background-image: url("../src/trash.png");
+  background-size: contain;
+
+  cursor: pointer;
+  transition-duration: .3s;
+
+  margin-right: 1rem;
+}
+
+#delete_button:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+#delete_done_button {
+  height: 1.8rem;
+  width: 1.8rem;
+
+  background-image: url("../src/trash_2.png");
+  background-size: contain;
+  background-position: center;
+
+  cursor: pointer;
+  transition-duration: .3s;
+  transform: scale(0.9);
+}
+
+#delete_done_button:hover {
+  transform: rotate(10deg) scale(1);
+}

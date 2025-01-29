@@ -1,0 +1,30 @@
+#impressum {
+  width: 40%;
+}
+
+#impressum h1 {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+#impressum .imp_block {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 1.5rem;
+}
+
+#impressum .imp_b {
+  font-weight: bold;
+}
+
+#impressum a {
+  color: var(--blue);
+  text-decoration: none;
+
+  transition-duration: .2s;
+}
+
+#impressum a:hover {
+  color: var(--red);
+  text-decoration: none;
+}

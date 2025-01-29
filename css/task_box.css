@@ -1,0 +1,88 @@
+
+
+
+.task {
+  height: 70px;
+  width: 80%;
+  background: rgb(51,136,179);
+  background: linear-gradient(27deg, rgba(205,236,251,1) 0%, rgba(169,222,249,1) 30%);
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  margin-bottom: 2rem;
+  color: #191919;
+}
+
+
+.task .task_title {
+  margin-top: 34px;
+  margin-left: 20px;
+  font-size: 1.3rem;
+  transform: translateY(-.65rem);
+}
+
+.task .colorselector {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  width: 120px;
+}
+
+
+.task [class*="color_"] {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  transition-duration: .5s;
+  border: 1px solid rgba(0,0,0, .3);
+}
+
+.task .color_blue {
+  background: rgb(61,141,182);
+  background: linear-gradient(38deg, rgba(61,141,182,1) 0%, rgba(169,222,249,1) 90%);
+  z-index: 50;
+}
+
+.task .color_green {
+  background: rgb(90,193,130);
+background: linear-gradient(38deg, rgba(90,193,130,1) 0%, rgba(212,244,222,1) 90%);
+  z-index: 49;
+}
+
+.task .color_yellow {
+  background: rgb(230,212,42);
+  background: linear-gradient(38deg, rgba(230,212,42,1) 0%, rgba(252,246,189,1) 90%);
+  z-index: 48;
+}
+
+.task .color_pink {
+  background: rgba(226,75,145,1);
+  background: linear-gradient(38deg, rgba(226,75,145,1) 0%, rgba(255,153,200,1) 90%);
+  z-index: 47;
+}
+
+.task .task_close {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: rgb(221,28,28);
+  background: linear-gradient(38deg, rgba(221,28,28,1) 0%, rgba(255,76,76,1) 100%);
+  border-radius: 50%;
+  right: 5px;
+  top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0, .3);
+}
+
+
+.task .task_close .task_beam {
+  width: 60%;
+  height: 10%;
+  background-color:  #fff;
+}

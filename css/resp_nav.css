@@ -1,0 +1,167 @@
+nav .container_resp {
+  flex-flow: row nowrap;
+}
+
+#nav_resp_container_1 {
+  height: 100%;
+  width: calc(100% - 6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: var(--blue); */
+}
+
+#nav_resp_container_2 {
+  height: 100%;
+  width: 6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav_resp_burger_container {
+  height: 40%;
+  width: 40%;
+  position: relative;
+
+  cursor: pointer;
+}
+
+.burger_stripe {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+
+  transition-duration: .5s;
+  cursor: pointer;
+
+  background-color: var(--black);
+}
+
+.burger_stripe.fake_b {
+  background-color: var(--white);
+  opacity: 1;
+}
+
+.burger_stripe:nth-of-type(1) {
+  top: 0;
+}
+
+.burger_stripe:nth-of-type(2) {
+  top: calc(50% - 2.5px);
+}
+
+.burger_stripe:nth-of-type(3) {
+  bottom: 0;
+}
+
+.burger_stripe:nth-of-type(4) {
+  top: 0;
+}
+
+.burger_stripe:nth-of-type(5) {
+  top: calc(50% - 2.5px);
+}
+
+.burger_stripe:nth-of-type(6) {
+  bottom: 0;
+}
+
+/* OVERLAY */
+
+#resp_nav {
+  display: none;
+  flex-flow: column nowrap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+
+  opacity: 0;
+  transition-duration: .5s;
+
+  z-index: 1000;
+}
+
+#resp_nav_nav_overlay {
+  height: 6rem;
+
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#resp_nav_nav_overlay_buffer {
+  height: 100%;
+  width: calc(100% - 6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resp_nav_nav_overlay_clickContain {
+  height: 100%;
+  width: 6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+#resp_nav_nav_overlay_clickField {
+  height: 40%;
+  width: 40%;
+  position: relative;
+
+  cursor: pointer;
+}
+
+#resp_nav_selection_container {
+  height: calc(100% - 6rem);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#resp_nav_selection_container .resp_nav_link {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+  transition-duration: .5s;
+  opacity: 0;
+}
+
+#resp_nav_selection_container .resp_nav_link:hover {
+  color: var(--blue);
+}
+
+/* RESPONIVE */
+
+@media (max-width: 700px) {
+
+  nav {
+    height: 6rem;
+  }
+
+  #main_container {
+    height: calc(100% - 6rem);
+  }
+
+  nav .container_1 {
+    display: none;
+  }
+
+  nav .container_2 {
+    display: none;
+  }
+
+  nav .container_resp {
+    display: flex;
+  }
+
+}

@@ -1,0 +1,146 @@
+#add_task_container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+#add_task {
+  transform: translateX(10px);
+  height: 30px;
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+#add_task #task_plus1 {
+  width: 3px;
+  height: 100%;
+  background-color: #A9A9A9;
+  position: absolute;
+  left: calc(50% - 1.5px);
+  transition-duration: .5s;
+}
+
+#add_task #task_plus2 {
+  width: 100%;
+  height: 3px;
+  background-color: #A9A9A9;
+  position: absolute;
+  top: calc(50% - 1.5px);
+}
+
+
+#task_adder_container {
+  width: 100%;
+  height: 0px;
+  background: linear-gradient(0deg, rgba(187,187,187,1) 0%, rgba(215,211,211,1) 50%, rgba(187,187,187,1) 100%);
+  transition-duration: .5s;
+  transition-property: height;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#task_adder_container #task_adder_design {
+  height: 70px;
+  width: 80%;
+  background: rgb(51,136,179);
+  background: linear-gradient(27deg, rgba(205,236,251,1) 0%, rgba(169,222,249,1) 30%);
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  color: #191919;
+}
+
+#task_adder_container .task_title {
+  margin-top: 34px;
+  margin-left: 20px;
+  font-size: 1.3rem;
+  transform: translateY(-.65rem);
+}
+
+#task_adder_container .task_title .adder_input_title {
+  display: block;
+  outline: none;
+  border: none;
+  font-size: 1.3rem;
+  font-family: inherit;
+  border-radius: 5px;
+}
+
+#task_adder_container .colorselector {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  width: 120px;
+}
+
+
+#task_adder_container [class*="color_"] {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  transition-duration: .5s;
+  border: 1px solid rgba(0,0,0, .3);
+}
+
+#task_adder_container .color_blue {
+  background: rgb(61,141,182);
+  background: linear-gradient(38deg, rgba(61,141,182,1) 0%, rgba(169,222,249,1) 90%);
+  z-index: 50;
+}
+
+#task_adder_container .color_green {
+  background: rgb(90,193,130);
+  background: linear-gradient(38deg, rgba(90,193,130,1) 0%, rgba(212,244,222,1) 90%);
+  z-index: 49;
+}
+
+#task_adder_container .color_yellow {
+  background: rgb(230,212,42);
+  background: linear-gradient(38deg, rgba(230,212,42,1) 0%, rgba(252,246,189,1) 90%);
+  z-index: 48;
+}
+
+#task_adder_container .color_pink {
+  background: rgba(226,75,145,1);
+  background: linear-gradient(38deg, rgba(226,75,145,1) 0%, rgba(255,153,200,1) 90%);
+  z-index: 47;
+}
+
+#task_adder_container .task_adder_add {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background: rgb(90,193,130);
+  background: linear-gradient(38deg, rgba(90,193,130,1) 0%, rgba(212,244,222,1) 90%);
+  border-radius: 50%;
+  right: 5px;
+  top: 5px;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(0,0,0, .3);
+}
+
+
+#task_adder_container .task_adder_add .task_beam_plus1 {
+  width: 60%;
+  height: 10%;
+  background-color:  #fff;
+  position: absolute;
+  top: 45%;
+  left: 20%;
+}
+
+#task_adder_container .task_adder_add .task_beam_plus2 {
+  width: 10%;
+  height: 60%;
+  background-color:  #fff;
+  left: 45%;
+  top: 20%;
+  position: absolute;
+}
